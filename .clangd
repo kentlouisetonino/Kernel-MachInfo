@@ -1,0 +1,17 @@
+Diagnostics:
+  Suppress:
+    - invalid_token_after_toplevel_declarator
+    - typecheck_decl_incomplete_type
+    - ident_list_in_fn_declaration
+    - missing_param
+
+CompileFlags:
+  Add:
+    - -I/usr/include/linux
+    - -I/lib/modules/6.1.0-38-amd64/build/include
+    - -D__KERNEL__
+    - -DMODULE
+    - -DMODULE_LICENSE(x)=
+    - -DMODULE_AUTHOR(x)=
+    - -DMODULE_DESCRIPTION(x)=
+    - -std=gnu89

@@ -1,10 +1,10 @@
-#include <linux/module.h>
 #include <linux/kernel.h>
+#include <linux/module.h>
 #include <linux/utsname.h>
 
 // * Module initialization function.
 static int __init machinfo_init(void) {
-  struct new_utsname *uts = init_utsname();
+  struct new_utsname *uts = utsname();
 
   printk(KERN_INFO "Initialize machinfo module. \n");
   printk(KERN_INFO "Kernel Name: %s\n", uts->sysname);
@@ -27,4 +27,5 @@ module_exit(machinfo_exit);
 // * Module information.
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Kent Tonino");
-MODULE_DESCRIPTION("A simple Kernel Module project that display the machine information.");
+MODULE_DESCRIPTION(
+    "A simple Kernel Module project that display the machine information.");
