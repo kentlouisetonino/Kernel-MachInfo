@@ -1,2 +1,3 @@
-# Kernel-MachInfo
-A simple Kernel Module project that display the machine information.
+## Description
+
+- A simple Kernel Module project that display the machine information.
