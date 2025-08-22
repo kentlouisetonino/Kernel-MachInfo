@@ -7,7 +7,7 @@
 
 
 
-## Local Development
+## Setup
 
 > - Run the following commands.
 
