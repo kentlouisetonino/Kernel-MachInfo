@@ -1,9 +1,17 @@
 #include <linux/module.h>
 #include <linux/kernel.h>
+#include <linux/utsname.h>
 
 // * Module initialization function.
 static int __init machinfo_init(void) {
+  struct new_utsname *uts = init_utsname();
+
   printk(KERN_INFO "Initialize machinfo module. \n");
+  printk(KERN_INFO "Kernel Name: %s\n", uts->sysname);
+  printk(KERN_INFO "Kernel Release: %s\n", uts->release);
+  printk(KERN_INFO "Kernel Version: %s\n", uts->version);
+  printk(KERN_INFO "Machine Architecture: %s\n", uts->machine);
+
   return 0;
 }
 
