@@ -2,7 +2,8 @@
 
 > - A simple Kernel Module project that display the machine information.
 
-<img width="1831" height="1024" alt="Screenshot from 2025-08-22 23-39-40" src="https://github.com/user-attachments/assets/723dba97-0668-411d-a6b8-55bf8e5b4259" />
+<img width="593" height="125" alt="Screenshot from 2025-08-23 07-59-10" src="https://github.com/user-attachments/assets/742c1f83-c941-4c74-a2ef-a3c4f295a0ad" />
+
 
 
 <br />
