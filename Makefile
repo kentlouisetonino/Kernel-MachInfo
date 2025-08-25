@@ -11,4 +11,4 @@ insert-module:
 	sudo insmod machinfo.ko
 
 remove-module:
-	sudo rmmod machinfo.kosudo rmmod ./src/machinfo.ko
+	sudo rmmod machinfo
