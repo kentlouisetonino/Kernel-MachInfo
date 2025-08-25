@@ -17,7 +17,7 @@
 
 ```sh
 # * Build the module.
-make
+make all
 
 # * Insert the module.
 make insert-module
