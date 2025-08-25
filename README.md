@@ -22,6 +22,9 @@ make all
 # * Insert the module.
 make insert-module
 
+# * View the module diagnostic message.
+sudo dmesg
+
 # * Remove the module.
 make remove-module.
 
