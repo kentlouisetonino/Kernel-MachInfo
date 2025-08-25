@@ -7,10 +7,12 @@ static int __init machinfo_init(void) {
   struct new_utsname *uts = utsname();
 
   printk(KERN_INFO "Initialize machinfo module. \n");
-  printk(KERN_INFO "Kernel Name: %s\n", uts->sysname);
-  printk(KERN_INFO "Kernel Release: %s\n", uts->release);
-  printk(KERN_INFO "Kernel Version: %s\n", uts->version);
+  printk(KERN_INFO "Machine System Name: %s\n", uts->sysname);
+  printk(KERN_INFO "Machine Node Name: %s\n", uts->nodename);
+  printk(KERN_INFO "Machine Release: %s\n", uts->release);
+  printk(KERN_INFO "Machine Version: %s\n", uts->version);
   printk(KERN_INFO "Machine Architecture: %s\n", uts->machine);
+  printk(KERN_INFO "Machine Domain Name: %s\n", uts->domainname);
 
   return 0;
 }
