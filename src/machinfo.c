@@ -2,6 +2,11 @@
 #include <linux/module.h>
 #include <linux/utsname.h>
 
+// * Module information.
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Kent Tonino");
+MODULE_DESCRIPTION("A Kernel Module project that shows machine information.");
+
 // * Module initialization function.
 static int __init machinfo_init(void) {
   struct new_utsname *uts = utsname();
@@ -25,9 +30,3 @@ static void __exit machinfo_exit(void) {
 // * Register the module's init and exit function.
 module_init(machinfo_init);
 module_exit(machinfo_exit);
-
-// * Module information.
-MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Kent Tonino");
-MODULE_DESCRIPTION(
-    "A simple Kernel Module project that display the machine information.");

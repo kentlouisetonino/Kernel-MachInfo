@@ -14,6 +14,13 @@
 
 ## Setup
 
+> - Make sure you installed the build modules necessary for your Linux Kernel version.
+
+```sh
+sudo apt update
+sudo apt install linux-headers-$(uname -r)
+```
+
 > - Run the following commands.
 
 ```sh
@@ -24,7 +31,7 @@ make all
 make insert-module
 
 # * View the module diagnostic message.
-sudo dmesg
+sudo dmesg | tail -10
 
 # * Remove the module.
 make remove-module.
